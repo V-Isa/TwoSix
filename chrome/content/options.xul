@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow id="twosix-ui-optionsWindow" title="Настройка расширения «2 / 6»" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<prefpane id="twosix-ui-options-container" label="Настройки расширения «2 / 6»">
+	<preferences>
+		<preference id="twosix-ui-option-url-number-to-open-when-main-button-is-clicked" name="extensions.twosix.url-number-to-open-when-main-button-is-clicked" type="int"/>
+		<preference id="twosix-ui-option-refresh-interval" name="extensions.twosix.refresh-interval" type="int"/>
+		<preference id="twosix-ui-option-name" name="extensions.twosix.name" type="string"/>
+		<preference id="twosix-ui-option-email" name="extensions.twosix.email" type="string"/>
+		<preference id="twosix-ui-option-use-name-and-email-only-from-prefernces" name="extensions.twosix.use-name-and-email-only-from-prefernces" type="bool"/>
+	</preferences>
+	<groupbox>
+		<grid>
+			<columns>
+				<column/>
+				<column flex="1"/>
+			</columns>
+			<rows>
+				<row>
+				<label control="twosix-ui-pref-url-number-to-open-when-main-button-is-clicked" value="При клике на кнопке открывать: "/>
+				<menulist preference="twosix-ui-option-url-number-to-open-when-main-button-is-clicked" id="twosix-ui-pref-url-number-to-open-when-main-button-is-clicked">
+					<menupopup>
+						<menuitem label="Главную страницу" value="0"/>
+						<menuitem label="Портфель редактора" value="1"/>
+						<menuitem label="Книгу отзывов" value="2"/>
+					</menupopup>
+				</menulist>
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+	<groupbox>
+		<grid>
+			<columns>
+				<column/>
+				<column flex="1"/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+				<label control="twosix-ui-pref-refresh-interval" value="Интервал обновления: "/>
+				<textbox preference="twosix-ui-option-refresh-interval" id="twosix-ui-pref-refresh-interval" type="number" min="1" max="60"/>
+				<label value=" мин."/>
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+	<groupbox>
+		<grid>
+			<columns>
+				<column flex="1"/>
+			</columns>
+			<rows>
+				<row>
+					<grid>
+						<columns>
+							<column/>
+							<column flex="1"/>
+						</columns>
+						<rows>
+							<row>
+							<label control="twosix-ui-pref-name" value="Автор: "/>
+							<textbox preference="twosix-ui-option-name" id="twosix-ui-pref-name" maxlength="255"/>
+							</row>
+							<row>
+							<label control="twosix-ui-pref-email" value="E-Mail: "/>
+							<textbox preference="twosix-ui-option-email" id="twosix-ui-pref-email" maxlength="255"/>
+							</row>
+						</rows>
+					</grid>
+				</row>
+				<row>
+					<checkbox preference="twosix-ui-option-use-name-and-email-only-from-prefernces" id="twosix-ui-pref-use-name-and-email-only-from-prefernces" label="принудительно использовать эти параметры"/>
+				</row>
+				<row>
+					<label value="(вместо автоматически определяемых из браузера)"/>
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+</prefpane>
+</prefwindow>

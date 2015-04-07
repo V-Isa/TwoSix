@@ -1,0 +1,9 @@
+#twosix-ui-browserButton
+{
+	list-style-image: url("chrome://twosix/content/icons/button.png");
+}
+
+toolbar[iconsize="small"] #twosix-ui-browserButton
+{
+	list-style-image: url("chrome://twosix/content/icons/button.png");
+}

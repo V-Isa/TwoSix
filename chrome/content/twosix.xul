@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://twosix/content/css/main.css" type="text/css"?>
+<overlay id="twosix" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://twosix/content/main.js" />
+
+<!-- UI_BROWSER_BUTTON_START -->
+<toolbarpalette id="BrowserToolbarPalette">
+	<toolbaritem id="twosix-ui-browserButton-container" align="center" label="2 / 6">
+		<toolbarbutton type="menu-button" class="chromeclass-toolbar-additional toolbarbutton-1" id="twosix-ui-browserButton" label="2 / 6" orient="horizontal" tooltiptext="Отслеживает изменения на сайте &quot;Две строки / шесть слогов&quot;">
+			<menupopup>
+				<menuitem id="twosix-ui-menuItem-refreshInformation" label="Обновить"/>
+				<menuseparator/>
+				<menuitem id="twosix-ui-menuItem-goToMainPage" label="Главная страница"/>
+				<menuseparator/>
+				<menuitem id="twosix-ui-menuItem-goToEditorBriefcase" label="Портфель редактора" class="menuitem-iconic"/>
+				<menu label="Добавить">
+					<menupopup>
+						<menuitem id="twosix-ui-menuItem-addMenuAEInfo" disabled="true" label="&lt;Автор / E-Mail&gt;"/>
+						<menuseparator/>
+						<menuitem id="twosix-ui-menuItem-addOneT" label="Танкетку"/>
+						<menuitem id="twosix-ui-menuItem-addOneTWithEpigraph" label="Танкетку с эпиграфом"/>
+						<menu label="Цикл из">
+							<menupopup>
+								<menuitem id="twosix-ui-menuItem-addTwoTWithEpigraph" label="2х танкеток"/>
+								<menuitem id="twosix-ui-menuItem-addThreeTWithEpigraph" label="3х танкеток"/>
+								<menuitem id="twosix-ui-menuItem-addFourTWithEpigraph" label="4х танкеток"/>
+							</menupopup>
+						</menu>
+					</menupopup>
+				</menu>
+				<menu id="twosix-ui-menuItem-addMonthTopicMenu" label="Добавить (на тему месяца)" disabled="true">
+					<menupopup>
+						<menuitem id="twosix-ui-menuItem-addMonthTopicMenuAEInfo" disabled="true" label="&lt;Автор / E-Mail&gt;"/>
+						<menuitem id="twosix-ui-menuItem-addMonthTopicMenuMTInfo" disabled="true" label="&lt;тема месяца&gt;"/>
+						<menuseparator/>
+						<menuitem id="twosix-ui-menuItem-addMonthTopicOneT" label="Танкетку"/>
+						<menuitem id="twosix-ui-menuItem-addMonthTopicOneTWithEpigraph" label="Танкетку с эпиграфом"/>
+						<menu label="Цикл из">
+							<menupopup>
+								<menuitem id="twosix-ui-menuItem-addMonthTopicTwoTWithEpigraph" label="2х танкеток"/>
+								<menuitem id="twosix-ui-menuItem-addMonthTopicThreeTWithEpigraph" label="3х танкеток"/>
+								<menuitem id="twosix-ui-menuItem-addMonthTopicFourTWithEpigraph" label="4х танкеток"/>
+							</menupopup>
+						</menu>
+					</menupopup>
+				</menu>
+				<menuseparator/>
+				<menuitem id="twosix-ui-menuItem-goToGuestBook" label="Книга отзывов" class="menuitem-iconic"/>
+				<menuseparator/>
+				<menuitem id="twosix-ui-menuItem-goToSearchPage" label="Поиск"/>
+				<menuseparator/>
+				<menuitem id="twosix-ui-menuItem-openOptionsDialog" label="Настройки"/>
+			</menupopup>
+		</toolbarbutton>
+	</toolbaritem>
+</toolbarpalette>
+<!-- UI_BROWSER_BUTTON_END -->
+
+<hbox hidden="true">
+	<html:canvas id="twosix-ui-canvas" width="16" height="16">0</html:canvas>
+</hbox>
+</overlay>

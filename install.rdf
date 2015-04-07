@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>twosix@v-isa.narod.ru</em:id>
+		<em:version>1.0.0.2</em:version>
+		<em:type>2</em:type>
+		<em:targetApplication>
+		 <Description>
+			<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+			<em:minVersion>3.0</em:minVersion>
+			<em:maxVersion>26.*</em:maxVersion>
+		 </Description>
+		</em:targetApplication>
+		<em:name>Две строки / шесть слогов [2 / 6]</em:name>
+		<em:description>Отслеживание изменений на сайте «Две строки / шесть слогов» [http://26.netslova.ru], а также предоставление авторам танкеток удобных инструментов для эффективного взаимодействия с сайтом.</em:description>
+		<em:creator>Вадим Исаенко [V-Isa aka Inter aka Enter]</em:creator>
+		<em:homepageURL>http://v-isa.narod.ru/</em:homepageURL>
+		<em:iconURL>chrome://twosix/content/icons/icon32.png</em:iconURL>
+		<em:icon64URL>chrome://twosix/content/icons/icon64.png</em:icon64URL>
+		<em:optionsURL>chrome://twosix/content/options.xul</em:optionsURL>
+		<em:aboutURL>chrome://twosix/content/about.xul</em:aboutURL>
+	</Description>
+</RDF>

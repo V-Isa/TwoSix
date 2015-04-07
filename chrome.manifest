@@ -1,0 +1,5 @@
+content twosix chrome/content/
+overlay chrome://browser/content/browser.xul chrome://twosix/content/twosix.xul
+resource twosix chrome/content/
+style chrome://global/content/customizeToolbar.xul chrome://twosix/content/css/main.css
+locale twosix ru-RU chrome/locale/ru-RU/

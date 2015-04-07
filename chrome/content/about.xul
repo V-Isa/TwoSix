@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="twosix-ui-aboutWindow" title="О расширении «2 / 6»" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<hbox>
+		<vbox style="width:132px;height:132px">
+			<image style="padding-left:2px;padding-top:2px;" src='chrome://twosix/content/icons/icon128.png' width='128' height='128'/>
+		</vbox>
+		<vbox>
+			<hbox>
+				<description style="width: 264px">«2 / 6» — расширение для Firefox, которое отслеживает изменения на сайте «Две строки / шесть слогов» [http://26.netslova.ru], а также предоставляет авторам танкеток удобные инструменты для эффективного взаимодействия с сайтом.</description>
+			</hbox>
+			<spacer/>
+			<label value="Идея расширения:"/>
+			<label value="    Вадим Исаенко [V-Isa aka Inter aka Enter]"/>
+			<label value="Программный код расширения:"/>
+			<label value="    Вадим Исаенко [V-Isa aka Inter aka Enter]"/>
+			<label value="Графическая эмблема:"/>
+			<label value="    Soamo"/>
+			<spacer/>
+			<hbox>
+				<description style="width: 264px">«Две строки / шесть слогов» — проект Алексея Верницкого, который ввёл в обиход русской поэзии форму «танкетка». Интернет-проект объединяет авторов танкеток, предоставляя им возможность публикации своих творений.</description>
+			</hbox>
+			<hbox>
+				<description style="width: 264px">Танкетка — сверхкраткая твёрдая поэтическая форма. Она представляет собой стихотворение из двух строк, насчитывающих в сумме шесть слогов. Слоги должны быть расположены в строках по схеме «3+3» или «2+4». В танкетке должно быть не больше пяти слов и не должно быть знаков препинания.</description>
+			</hbox>
+		</vbox>
+	</hbox>
+</window>
+
